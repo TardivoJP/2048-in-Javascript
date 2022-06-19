@@ -1,0 +1,194 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: rgb(219, 219, 219);
+}
+
+.display-none{
+    display: none !important;
+}
+
+.container{
+    background-color: rgb(219, 219, 219);
+    width: 100vmin;
+    height: 100vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.rectangle{
+    background-color: rgb(191, 192, 107);
+    width: 80%;
+    height: 20%;
+    margin-bottom: 5%;
+    border-radius: 2em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rectangle-child{
+    background-color: rgb(157, 158, 85);
+    width: 40%;
+    height: 80%;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2em;
+}
+
+#score-board{
+    width: 95%;
+    height: 70%;
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+#new-game-button{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    transition: 0.2s ease-in-out;
+}
+
+#new-game-button:hover{
+    background-color: rgb(118, 119, 57);
+    color: white;
+    cursor: pointer;
+}
+
+#failboard{
+    background-color: rgb(164, 165, 95);
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    border-radius: 2em;
+    border: 0.5em solid black;
+    font-size: 3em;
+    z-index: 100;
+}
+
+#game-over-button{
+    background-color: rgb(118, 119, 57);
+    width: 40%;
+    height: 30%;
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    transition: 0.2s ease-in-out;
+}
+
+#game-over-button:hover{
+    background-color: rgb(93, 94, 44);
+    color: white;
+    cursor: pointer;
+}
+
+.square{
+    background-color: rgb(205, 206, 132);
+    width: 80%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#game-grid{
+    background-color: rgb(177, 179, 108);
+    width: 95%;
+    height: 95%;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    border-radius: 1.5em;
+    overflow: hidden;
+}
+
+.cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    border-radius: 0.5em;
+    border: 0.1em solid black;
+
+    animation: move-tile 0.1s ease-in-out reverse 1;
+}
+
+@keyframes move-tile {
+    100% {
+        transform: scale(1.05) translateX(-10%);
+    }
+}
+
+.twocolor{
+    background-color: rgb(250, 250, 216);
+}
+
+.fourcolor{
+    background-color: rgb(236, 236, 195);
+}
+
+.eightcolor{
+    background-color: rgb(240, 213, 124);
+}
+
+.sixteencolor{
+    background-color: rgb(255, 209, 58);
+}
+
+.thirtytwocolor{
+    background-color: rgb(252, 135, 89);
+}
+
+.sixtyfourcolor{
+    background-color: rgb(255, 106, 47);
+}
+
+.onetwentyeightcolor{
+    background-color: rgb(161, 252, 125);
+}
+
+.twofiftysixcolor{
+    background-color: rgb(124, 236, 79);
+}
+
+.fivetwelvecolor{
+    background-color: rgb(94, 197, 54);
+}
+
+.thousandcolor{
+    background-color: rgb(54, 197, 114);
+}
+
+.twofortyeightcolor{
+    background-color: rgb(68, 224, 198);
+}
+
+.highnumbercolor{
+    background-color: rgb(68, 123, 224);
+}
